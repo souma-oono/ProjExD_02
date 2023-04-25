@@ -90,6 +90,10 @@ def main():
         # 練習3: 爆弾の表示
         bb_rct.move_ip(vx, vy)
         screen.blit(bb_img, bb_rct)
+        
+        # 練習6: こうかとんと爆弾の衝突判定
+        if kk_rct.colliderect(bb_rct):
+            return
 
         pg.display.update()
         clock.tick(1000)
