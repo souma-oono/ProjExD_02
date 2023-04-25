@@ -66,9 +66,8 @@ def main():
         
         # 演習2: 爆弾の加速度の設定
         if tmr % 1000 == 0:
-            vx *= 1.05
-            vy *= 1.05
-            print(vx, vy)
+            vx *= 1.15
+            vy *= 1.15
         
         # 練習4: 矢印キーでの移動
         key_lst = pg.key.get_pressed()
